@@ -15,9 +15,8 @@ const displayFriendsList = data =>{
     for(const friend of friends){
       const div = document.createElement('div')
       div.classList.add('friend_list')
-      const li = document.createElement('li');
-      li.innerText = `${friend.name.title} ${friend.name.first} `
-   div.appendChild(li)
+      div.innerHTML = 
+      `<h3>${friend.name.title}${friend.name.first} ${friend.name.last} </h3>`
         parentDiv.appendChild(div)
     }
 }
